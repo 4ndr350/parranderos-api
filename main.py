@@ -15,7 +15,7 @@ app.add_middleware(
 
 client = MongoClient(os.environ["MONGO_URI"])
 
-db = client["ISISISIS2304B21202610"]
+db = client["ISIS2304B21202610"]
 
 
 def serializar(doc):
