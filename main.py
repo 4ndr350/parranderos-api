@@ -13,14 +13,9 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-# os.environ para despliegue. Descomente cuando ya probo todo local.
 client = MongoClient(os.environ["MONGO_URI"])
 
-# Para pruebas locales (comente la linea de arriba y descomente esta):
-# client = MongoClient("mongodb://<usuario>:<contrasena>@157.253.236.88:8087")
-
-# Reemplace ISIS******* por el nombre de su base (el que ve en Compass)
-db = client["ISIS*******"]
+db = client["ISISISIS2304B21202610"]
 
 
 def serializar(doc):
